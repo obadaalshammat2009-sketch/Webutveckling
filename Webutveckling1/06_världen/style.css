@@ -1,0 +1,54 @@
+.body1{
+    background-image: url(Img/jorden_nasa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+h1 {
+    color: white;
+}
+h2 {
+    color:white;
+}
+a {
+    color:gray;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+.Europa1 {
+background-attachment: fixed;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+background: url(Img/Mapa_europa.svg.png);
+}
+.asien1 {
+    background: url(Img/map-of-asia.webp);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.världen3 {
+    text-decoration: none;
+    color: blue;
+}
+.h3 {
+    color: black;
+}
+.världen1 {
+    text-decoration: none;
+    color: blue;
+}
+.världen2 {
+    text-decoration: none;
+    color: blue;
+}
+.h2 {
+    color: black;
+}
+.h1 {
+    color: black;
+}

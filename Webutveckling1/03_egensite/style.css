@@ -1,0 +1,19 @@
+header{
+    background-color: #333;
+}
+header h1{
+    color: white;
+}
+.gul {
+    color: yellow;
+}
+nav a {
+    text-decoration: none;
+}
+.blue {
+    color: rgb(1, 165, 230);
+}
+
+main{
+    text-align: center;
+}
