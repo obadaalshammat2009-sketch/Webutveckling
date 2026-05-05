@@ -1,0 +1,947 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+  }
+ 
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    padding: 2rem;
+    color: white;
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+  
+  .logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  .logo1 {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .logo1 {
+    color: white;
+    text-decoration: none;
+    margin: 0;
+  }
+  
+   .menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menu a:hover {
+    text-decoration: underline;
+  }
+
+  .menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  div.bild{
+    height: 100vh;
+    background: url(Img/obada.png);
+    background-size: cover;
+  }
+  
+
+/* Home */
+.Home_img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+.Home_h1 {
+  color: rgb(96, 93, 93);
+  text-align: center;
+  font-size: 60px;
+  position: absolute;
+  top: 37vh;
+  left: 20vh;
+  word-spacing: 10px;
+}
+
+/* Exercise */
+.exercise-container {
+  display:grid;
+grid-template-columns:repeat(auto-fit, minmax(350px,1fr));
+gap:25px;
+}
+.exercise-card{
+  position:relative;
+  height:220px;
+  /* GÖR RUTORNA BÖJDA */
+  border-radius:40px; 
+  overflow:hidden;
+  text-decoration:none;
+  color:white;
+  transition:0.3s;
+  }
+.exercise-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    filter:brightness(70%);
+
+    }
+.exercise-card:hover{
+      transform:scale(1.05);
+      }
+.exercise-info{
+        position:absolute;
+        bottom:20px;
+        left:20px;
+        }
+        
+.exercise-info h2{
+        font-size:30px;
+        margin:0;
+        }
+    
+/* Chest */
+.chestrubrik{
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+.chestgrid{
+  min-height: 720px;
+  display: grid;
+  margin: 40px;
+  column-gap: 25px;
+grid-template-columns: 1fr 1fr 2fr;
+grid-template-areas:
+"A  B   c"
+"D  E   F"
+}
+
+#A{
+  background-repeat: no-repeat;
+  width: 97%;
+  background-size: cover;
+  background-image: url(Img/59516c94-c4d9-482f-8ad2-004486b26afa.jpg);
+}
+#B{
+  background-repeat: no-repeat;
+  left: 10px;
+  width: 97%;
+  background-size: cover;
+  background-image: url(Img/incline-dumbbell-bench-press-800.jpg);
+}
+#C{
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-image: url(Img/cable-standing-fly.webp);
+}
+#D{
+  color: white;
+}
+#E {
+  color: white;
+}
+#F{
+  color: white;
+  white-space: normal;
+}
+
+/* Back */
+.backrubrik{
+  color: white;
+  text-align: center;
+}
+.backgrid{
+  height: 720px;
+  display: grid;
+  column-gap: 25px;
+  margin: 40px;
+grid-template-columns: 2fr 2fr 2fr;
+grid-template-areas:
+"G H I"
+"J K L"
+}
+
+#G{
+  /* width: 100%; */
+  background-position: center center;
+  background-image: url(Img/deadlift-kreuzheben-800x448.webp);
+  background-size: cover;
+}
+#H{
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-image: url(Img/rsw_1280-9.webp);
+}
+#I{
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-image: url(Img/0118.webp);
+}
+#J{
+  color: white;
+}
+#K {
+  color: white;
+}
+#L{
+  color: white;
+  white-space: normal;
+}
+
+/* Shoulders */
+.shouldersrubrik{
+  color: white;
+  text-align: center;
+}
+.Shouldersgrid{
+  display: grid;
+  column-gap: 25px;
+  margin: 40px;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-areas:
+"M N O"
+"P Q R"
+}
+
+#M{
+  background-position: center center;
+  background-image: url(Img/Dumbbell-Shoulder-Press-resized.webp);
+  background-size: cover;
+}
+#N{
+  background-position: center center;
+  background-size: cover;
+  background-image: url(Img/dumbbell-lateral-raise-resized.webp);
+}
+#O{
+  width: 120%;
+  background-position: center center;
+  background-size: cover;
+  background-image: url(Img/Face-pull-resized.webp);
+}
+#P{
+  color: white;
+}
+#Q {
+  color: white;
+}
+#R{
+  color: white;
+  white-space: normal;
+}
+
+/* Biceps */
+.Bicepsrubrik{
+  color: white;
+  text-align: center;
+}
+.Bicepsgrid{
+  display: grid;
+  column-gap: 25px;
+  margin: 40px;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-areas:
+"S T U"
+"V W X"
+}
+
+#S{
+  background-position: center center;
+  background-image: url(Img/barbell-curl-resized.webp);
+  background-size: cover;
+}
+#T{
+  background-position: center center;
+  background-size: cover;
+  background-image: url(Img/Dumbbell-Alternate-Biceps-Curl-resized.webp);
+}
+#U{
+  background-position: center center;
+  background-size: cover;
+  background-image: url(Img/Dumbbell-Hammer-Curl-resized.webp);
+}
+#V{
+  color: white;
+}
+#W{
+  color: white;
+}
+#X{
+  color: white;
+  white-space: normal;
+}
+
+/* Triceps */
+.Tricepsrubrik{
+  color: white;
+  text-align: center;
+}
+.Tricepsgrid{
+  display: grid;
+  column-gap: 25px;
+  margin: 40px;
+grid-template-columns: 1fr 1fr 1fr;
+}
+
+#Ab{
+  background-position: center center; 
+  background-image: url(Img/Triceps-Dip-resized.webp);
+  background-size: cover;
+}
+#Ac{
+  background-position: center center;
+  background-size: cover;
+  background-image: url(Img/Tricep-pushdown-movement_ddb8dbd8-566d-4f55-99e0-36c35790234a_600x.webp);
+}
+#Ad{
+  background-position: center center;
+  background-size: cover;
+  background-image: url(Img/Barbell-skull-crusher-resized.webp);
+}
+#Ae{
+  color: white;
+}
+#Af{
+  color: white;
+}
+#Ag{
+  color: white;
+  white-space: normal;
+}
+
+/* Legs */
+.Legsrubrik {
+  color: white;
+  text-align: center;
+}
+
+/* Koppla ihop alla ID:n med deras namn i gridet */
+#Ba { grid-area: Ba; }
+#Ca { grid-area: Ca; }
+#Da {
+  grid-area: Da;
+  background-image: url(Img/Dumbbell-Lunge-resized-fixed.webp);
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  /* Vi låser höjden så den matchar de andra bilderna exakt */
+  height: 250px; 
+  width: 100%;
+}
+#Fa { grid-area: Fa; } /* Squats text */
+#Ga { grid-area: Ga; } /* RDL text */
+#Ha { grid-area: Ha; } /* Lunges text */
+#Ea { grid-area: Ea; } /* Calf image */
+#Ia { grid-area: Ia; } /* Calf text */
+#x  { grid-area: x; }
+#y  { grid-area: y; }
+
+/* Gemensam stil för alla texter */
+#Fa, #Ga, #Ha, #Ia {
+  color: white;
+  padding: 10px;
+}
+
+/* Gemensam stil för alla bilder - FIXAR ZOOM-PROBLEMET */
+.Legsimage {
+  min-height: 250px;
+  background-position: center;
+  background-size: contain !important; /* Tvingar hela bilden att synas */
+  background-repeat: no-repeat;
+}
+
+/* Bild-länkar */
+#Ba { background-image: url(Img/barbell-squat-resized-FIXED-2.webp); }
+#Ca { background-image: url(Img/barbell-deadlift_600x600.webp); }
+#Da { background-image: url(Img/Dumbbell-Lunge-resized-fixed.webp); }
+#Ea { background-image: url(Img/Lever-Standing-Calf-Raise-resized.webp); }
+
+/* Abs */
+.Absrubrik {
+  color: white !important; /* Tvingar färgen till vit */
+  text-align: center;
+  width: 100%;
+  display: block;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* --- 2. GRID FIX --- */
+.Absgrid {
+  display: grid;
+  column-gap: 25px;
+  row-gap: 20px;
+  margin: 40px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+    "Ca Cb Cc"
+    "Cd Ce Cf";
+}
+
+.Absimage {
+  height: 300px; /* Låser höjden så de är lika långa */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain; 
+  background-color: white; /* Gör bakgrunden vit så bilderna smälter in */
+  border-radius: 8px;
+}
+
+/* --- 3. BILDERNA (Kolla namnet på Cc!) --- */
+#Ca { grid-area: Ca; background-image: url("Img/29631101-Captains-Chair-Straight-Leg-Raise_Waist_small.jpg"); }
+#Cb { grid-area: Cb; background-image: url("Img/Cable-Kneeling-Crunch-resized.webp"); }
+
+/* Om Cc fortfarande inte syns: Kolla om filen i din mapp verkligen heter exakt 0463.png */
+#Cc { 
+  grid-area: Cc; 
+  /* VIKTIGT: Vi använder citattecken och det nya namnet */
+  background-image: url("Img/0463.png"); 
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+  min-height: 300px; /* Tvingar rutan att ta plats */
+}
+
+/* --- 4. TEXTERNA --- */
+#Cd { grid-area: Cd; color: white; text-align: left; }
+#Ce { grid-area: Ce; color: white; text-align: left; }
+#Cf { grid-area: Cf; color: white; text-align: left; }
+
+
+
+/* shop */
+.shop {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(180px,1fr)); */
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.product {  
+  width: 200px;
+  /* height: 200px; */
+  aspect-ratio: 1 / 1;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 15px;
+  text-align: center;
+  border-radius: 10px;
+  color: white ;
+}
+
+.product h2{
+  font-size: 14px;
+}
+
+.productimage{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+/* .text{
+  background-color: white;
+} */
+.price {
+  font-weight: bold;
+  color: green;
+}
+
+button {
+  padding: 10px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* About us */
+.about {
+  padding: 80px 10%;
+  background: #0f0f0f;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.about-image img {
+  width: 350px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.about-text {
+  max-width: 600px;
+}
+
+.about-text h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.about-text h3 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #ddd;
+}
+
+.about-text button {
+  padding: 12px 25px;
+  border: none;
+  background: #00ff88;
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.about-text button:hover {
+  background: #00cc6a;
+}
+
+/* ===== Mobil ===== */
+@media(max-width: 768px) {
+  .Home_img {
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .Home_h1 {
+   width: 0;
+   left: 35%;
+  }
+      .menu-toggle {
+        display: block;
+      }
+    
+      .menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #333;
+        flex-direction: column;
+        overflow: hidden;
+    
+        max-height: 0;
+        transition: max-height 0.3s ease;
+      }
+    
+      .menu li {
+        text-align: center;
+        padding: 1rem 0;
+      }
+    
+      .menu.active {
+        max-height: 300px; /* justera efter behov */
+      }
+  
+      .menu{
+        position: relative;
+      }
+      
+      .menu{
+        position: absolute;
+        z-index: 2;
+      }
+
+      .chestgrid {
+        display: grid;
+      margin: 20px;
+      /* Vi ändrar till 3 kolumner för att matcha dina 3 bilder */
+      grid-template-columns: 1fr 1fr 1fr; 
+      /* Rad 1: Bilderna | Rad 2: Texterna */
+      grid-template-areas:
+        "A B C"
+        "D E F";
+      gap: 60px;
+      }
+
+      #A,#B,#C {
+        aspect-ratio: 1 / 1; /* Gör boxen kvadratisk */
+        background-size: contain; /* Garanterar att HELA bilden syns */
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+      }
+
+      #A {grid-area: A;  }
+      #B {grid-area: B;  }
+      #C {grid-area: C;  }
+      #D { grid-area: D; }
+      #E { grid-area: E; }
+      #F { grid-area: F; }
+
+      @media (max-width: 600px) {
+        .chestgrid {
+          grid-template-columns: 1fr; /* Ändra till en kolumn */
+          grid-template-areas:
+            "A"
+            "D"
+            "B"
+            "E"
+            "C"
+            "F";
+        }
+      }
+
+
+  /* Back */
+      .backgrid{
+      display: grid;
+      margin: 20px;
+      /* Vi ändrar till 3 kolumner för att matcha dina 3 bilder */
+      grid-template-columns: 1fr 1fr 1fr; 
+      /* Rad 1: Bilderna | Rad 2: Texterna */
+      grid-template-areas:
+        "G H I"
+        "J K L";
+      }
+
+      #G { grid-area: G; }
+#H { grid-area: H; }
+#I { grid-area: I; }
+#J { grid-area: J; }
+#K { grid-area: K; }
+#L { grid-area: L; }
+
+#G, #H, #I {
+  aspect-ratio: 1 / 1; /* Gör boxen kvadratisk */
+  background-size: contain; /* Garanterar att HELA bilden syns */
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+}/* RESPONSIVITET: Om skärmen är smal, stapla dem på höjden */
+@media (max-width: 600px) {
+  .backgrid {
+    grid-template-columns: 1fr; /* Ändra till en kolumn */
+    grid-template-areas:
+      "G"
+      "J"
+      "H"
+      "K"
+      "I"
+      "L";
+  }
+}
+
+
+      
+        }
+
+
+    /* Shoulders */
+        .Shouldersgrid{
+          display: grid;
+          margin: 20px;
+          /* Vi ändrar till 3 kolumner för att matcha dina 3 bilder */
+          grid-template-columns: 1fr 1fr 1fr; 
+          /* Rad 1: Bilderna | Rad 2: Texterna */
+          grid-template-areas:
+            "M N O"
+            "P Q R";
+          
+          }
+    
+    #M { grid-area: M; }
+    #N { grid-area: N; }
+    #O { grid-area: O; }
+    #P { grid-area: P; }
+    #Q { grid-area: Q; }
+    #R { grid-area: R; }
+    
+    #M, #N, #O {
+      aspect-ratio: 1 / 1; /* Gör boxen kvadratisk */
+      background-size: contain; /* Garanterar att HELA bilden syns */
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 100%;
+    }/* RESPONSIVITET: Om skärmen är smal, stapla dem på höjden */
+    @media (max-width: 600px) {
+      .Shouldersgrid {
+        grid-template-columns: 1fr; /* Ändra till en kolumn */
+        grid-template-areas:
+          "M"
+          "P"
+          "N"
+          "Q"
+          "O"
+          "R";
+      }
+    }
+  
+  
+  /* Bicpes */
+  .Bicepsgrid{
+    display: grid;
+    margin: 20px;
+    /* Vi ändrar till 3 kolumner för att matcha dina 3 bilder */
+    grid-template-columns: 1fr 1fr 1fr; 
+    /* Rad 1: Bilderna | Rad 2: Texterna */
+    grid-template-areas:
+      "S T U"
+      "V W X";
+    
+    }
+
+#S { grid-area: S; }
+#T { grid-area: T; }
+#U { grid-area: U; }
+#V { grid-area: V; }
+#W { grid-area: W; }
+#X { grid-area: X; }
+
+#S, #T, #U {
+aspect-ratio: 1 / 1; /* Gör boxen kvadratisk */
+background-size: contain; /* Garanterar att HELA bilden syns */
+background-repeat: no-repeat;
+background-position: center;
+width: 100%;
+}/* RESPONSIVITET: Om skärmen är smal, stapla dem på höjden */
+@media (max-width: 600px) {
+.Bicepsgrid {
+  grid-template-columns: 1fr; /* Ändra till en kolumn */
+  grid-template-areas:
+    "S"
+    "V"
+    "T"
+    "W"
+    "U"
+    "X";
+}
+}
+
+
+  /* Triceps */
+  .Tricepsgrid{
+    display: grid;
+    margin: 20px;
+    /* Vi ändrar till 3 kolumner för att matcha dina 3 bilder */
+    grid-template-columns: 1fr 1fr 1fr; 
+    /* Rad 1: Bilderna | Rad 2: Texterna */
+    grid-template-areas:
+      "Ab Ac Ad"
+      "Ae Af Ag";
+    
+    }
+
+#Ab { grid-area: Ab; }
+#Ac { grid-area: Ac; }
+#Ad { grid-area: Ad; }
+#Ae { grid-area: Ae; }
+#Af { grid-area: Af; }
+#Ag { grid-area: Ag; }
+
+#Ab, #Ac, #Ad {
+aspect-ratio: 1 / 1; /* Gör boxen kvadratisk */
+background-size: contain; /* Garanterar att HELA bilden syns */
+background-repeat: no-repeat;
+background-position: center;
+width: 100%;
+}/* RESPONSIVITET: Om skärmen är smal, stapla dem på höjden */
+@media (max-width: 600px) {
+.Tricepsgrid {
+  grid-template-columns: 1fr; /* Ändra till en kolumn */
+  grid-template-areas:
+    "Ab"
+    "Ae"
+    "Ac"
+    "Af"
+    "Ad"
+    "Ag";
+}
+}
+
+
+   /* Legs */
+   @media screen and (min-width: 720px) {
+    .Legsgrid {
+      display: grid;
+      min-height: 720px;
+      min-width: 720px;
+      column-gap: 25px;
+      margin: 40px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas: 
+        "Ba Ca Da"
+        "Fa Ga Ha"
+        "Ea x  y"
+        "Ia .  .";
+    }
+  }
+  
+  
+  /* --- 3. MOBIL-VY (Media Query) --- */
+  @media screen and (max-width: 719px) {
+    .Legsgrid {
+      gap: 20px;
+      display: grid;
+      margin: 10px;
+      grid-template-columns: 1fr; /* En kolumn */
+      /* HÄR FIXAR VI ORDNINGEN: Bild, sen text, bild, sen text... */
+      grid-template-areas:
+        "Ba"
+        "Fa"
+        "Ca"
+        "Ga"
+        "Da"
+        "Ha"
+        "Ea"
+        "Ia";
+    }
+  
+    .Legsimage {
+      min-height: 200px; /* Justera höjden för mobil */
+      width: 100%;
+    }
+  }
+    
+
+     /* Abs */
+     @media screen and (max-width: 768px) {
+  .Absgrid {
+    display: grid;
+    grid-template-columns: 1fr; /* En kolumn */
+    /* Varje rad måste ha ett eget par citattecken */
+    grid-template-areas:
+      "Ca"
+      "Cd"
+      "Cb"
+      "Ce"
+      "Cc"
+      "Cf";
+    gap: 20px;
+    margin: 20px;
+  }
+
+  /* Tvinga bilderna att synas på mobilen */
+  @media screen and (max-width: 768px) {
+    .Absgrid {
+      grid-template-columns: 1fr; /* En kolumn */
+      grid-template-areas:
+        "Ca"
+        "Cd"
+        "Cb"
+        "Ce"
+        "Cc"
+        "Cf";
+      margin: 20px;
+      gap: 10px;
+    }
+  
+    .Absimage {
+      height: 250px; /* Justera höjden för mobil */
+      width: 100%;
+    }
+  
+    /* Gör texten vit och centrerad på mobilen */
+    #Cd, #Ce, #Cf {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+  }
+  }
+
+  @media screen and (max-width: 600px) {
+    .navbar{
+      width: 100%;
+    }
+
+    .logo{
+      width: 100%;
+    }
+
+    .menu-toggle{
+
+      text-align: right;
+    }
+
+
+    .shop {
+      /* Ändrar till två kolumner på mobilen */
+      grid-template-columns: 1fr 1fr; 
+      column-gap: 10px;
+      row-gap: 20px;
+      padding: 10px;
+      justify-items: center;
+    }
+  
+    .product {
+      /* Gör boxarna mindre för att få plats med två i bredd */
+      width: 160px; 
+      padding: 10px;
+      margin: 5px;
+      height: auto; /* Låter höjden anpassas efter texten */
+      aspect-ratio: auto; 
+      border-radius: 8px;
+    }
+  
+    .productimage {
+      height: 140px; /* Gör bilden mindre så den får plats i den lilla boxen */
+      object-fit: contain; /* Garanterar att hela produkten syns */
+    }
+  
+    .product h2 {
+      font-size: 13px; /* Mindre text så den inte radbryts fult */
+      margin: 8px 0;
+    }
+  
+    .price {
+      font-size: 14px;
+    }
+  
+    button {
+      width: 100%; /* Knappen fyller ut hela boxens bredd på mobilen */
+      padding: 8px;
+      font-size: 12px;
+    }
+  }
+
+ 
+ 
